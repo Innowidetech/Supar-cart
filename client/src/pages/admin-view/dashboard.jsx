@@ -178,6 +178,7 @@ function AdminDashboard() {
                     <li className="text-[#636363]">
                       Phone Number: {admin.mobileNumber}
                     </li>
+                    <li className="text-[#636363] flex-1">Email: {admin.email}</li>
                   </ul>
                 );
               }
@@ -186,27 +187,6 @@ function AdminDashboard() {
             {adminData.every((admin) => admin._id !== user?.id) && (
               <p>No account information available.</p>
             )}
-          </div>
-
-          {/* Login Details Section */}
-          <div className="mt-6" style={{ fontFamily: "Inter" }}>
-            <label className="text-xl font-medium">Login Details</label>
-            {adminData.map((admin) => {
-              if (admin._id === user.id) {
-                return (
-                  <ul
-                    key={admin._id}
-                    className="mt-4 flex flex-col md:flex-row md:w-[500px] md:ml-6"
-                  >
-                    <li className="text-[#636363] flex-1">Email: {admin.email}</li>
-                    <li className="text-[#636363] flex-1">
-                      Password: {"**********"}
-                    </li>
-                  </ul>
-                );
-              }
-              return null;
-            })}
           </div>
 
           {/* Image Upload Section */}
