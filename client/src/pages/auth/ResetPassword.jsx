@@ -15,7 +15,7 @@ const ResetPassword = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post('https://ecommerce-d1.onrender.com/api/auth/reset-password', {
+      const response = await axios.post('https://suparcart.onrender.com/api/auth/reset-password', {
         email,
         otp,
         newPassword,

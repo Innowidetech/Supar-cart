@@ -241,7 +241,7 @@ export const addressFormControls = [
     label: "Phone",
     name: "phone",
     componentType: "input",
-    type: "text",
+    type: "tel",
     placeholder: "Enter your phone number",
   },
   {

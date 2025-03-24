@@ -14,7 +14,7 @@ export const registerUser = createAsyncThunk(
   async (formData, { rejectWithValue }) => {
     try {
       const response = await axios.post(
-        "https://ecommerce-d1.onrender.com/api/auth/register",
+        "https://suparcart.onrender.com/api/auth/register",
         formData,
         { withCredentials: true }
       );
@@ -31,7 +31,7 @@ export const loginUser = createAsyncThunk(
   async (formData, { rejectWithValue }) => {
     try {
       const response = await axios.post(
-        "https://ecommerce-d1.onrender.com/api/auth/login",
+        "https://suparcart.onrender.com/api/auth/login",
         formData,
         { withCredentials: true }
       );
@@ -49,7 +49,7 @@ export const verifyOTP = createAsyncThunk(
   async ({ mobileNumber, otp }, { rejectWithValue }) => {
     try {
       const response = await axios.post(
-        "https://ecommerce-d1.onrender.com/api/auth/verify-otp",
+        "https://suparcart.onrender.com/api/auth/verify-otp",
         { mobileNumber, otp },
         { withCredentials: true }
       );
@@ -66,7 +66,7 @@ export const requestOTP = createAsyncThunk(
   async (mobileNumber, { rejectWithValue }) => {
     try {
       const response = await axios.post(
-        "https://ecommerce-d1.onrender.com/api/auth/request-otp",
+        "https://suparcart.onrender.com/api/auth/request-otp",
         { mobileNumber },
         { withCredentials: true }
       );
@@ -83,7 +83,7 @@ export const logoutUser = createAsyncThunk(
   async (_, { rejectWithValue }) => {
     try {
       const response = await axios.post(
-        "https://ecommerce-d1.onrender.com/api/auth/logout",
+        "https://suparcart.onrender.com/api/auth/logout",
         {},
         { withCredentials: true }
       );
@@ -105,7 +105,7 @@ export const checkAuth = createAsyncThunk(
     }
     try {
       const response = await axios.get(
-        "https://ecommerce-d1.onrender.com/api/auth/check-auth",
+        "https://suparcart.onrender.com/api/auth/check-auth",
         {
           withCredentials: true,
           headers: {

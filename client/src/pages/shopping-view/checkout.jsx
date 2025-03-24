@@ -88,10 +88,10 @@ function ShoppingCheckout() {
           key: "rzp_test_N2JZTugUiv8bEs",
           amount: totalCartAmount * 100,
           currency: "USD",
+          name:"Suparcart",
           description: "Test Transaction",
           order_id: razorpayOrderId,
           prefill: {
-            name: user?.name,
             email: user?.email,
             contact: currentSelectedAddress?.phone,
           },
@@ -108,7 +108,7 @@ function ShoppingCheckout() {
             } = response;
 
             fetch(
-              `https://ecommerce-d1.onrender.com/api/shop/order/capture/${orderId}`,
+              `https://suparcart.onrender.com/api/shop/order/capture/${orderId}`,
               {
                 method: "POST",
                 headers: {

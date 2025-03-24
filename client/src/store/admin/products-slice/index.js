@@ -11,7 +11,7 @@ export const addNewProduct = createAsyncThunk(
   "/products/addnewproduct",
   async ({ formData, adminId }) => {
     const result = await axios.post(
-      "https://ecommerce-d1.onrender.com/api/admin/products/add",
+      "https://suparcart.onrender.com/api/admin/products/add",
       { ...formData, adminId }, 
       {
         headers: {
@@ -28,7 +28,7 @@ export const fetchAllProducts = createAsyncThunk(
   "/products/fetchAllProducts",
   async (adminId) => {
     const result = await axios.get(
-      `https://ecommerce-d1.onrender.com/api/admin/products/get/${adminId}`
+      `https://suparcart.onrender.com/api/admin/products/get/${adminId}`
     );
     return result?.data;
   }
@@ -39,7 +39,7 @@ export const editProduct = createAsyncThunk(
   "/products/editProduct",
   async ({ id, formData, adminId }) => {
     const result = await axios.put(
-      `https://ecommerce-d1.onrender.com/api/admin/products/edit/${id}`,
+      `https://suparcart.onrender.com/api/admin/products/edit/${id}`,
       { ...formData, adminId }, 
       {
         headers: {
@@ -56,7 +56,7 @@ export const deleteProduct = createAsyncThunk(
   "/products/deleteProduct",
   async ({ id, adminId }) => {
     const result = await axios.delete(
-      `https://ecommerce-d1.onrender.com/api/admin/products/delete/${id}`,
+      `https://suparcart.onrender.com/api/admin/products/delete/${id}`,
       { data: { adminId } }
     );
     return result?.data;

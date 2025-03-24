@@ -11,7 +11,7 @@ function ProductFilter({ filters, handleFilter }) {
 
   const fetchCategoryandBrand = async () => {
     try {
-      const response = await axios.get("https://ecommerce-d1.onrender.com/api/shop/products/get");
+      const response = await axios.get("https://suparcart.onrender.com/api/shop/products/get");
       setData(response.data.data);
     } catch (error) {
       console.log('error');

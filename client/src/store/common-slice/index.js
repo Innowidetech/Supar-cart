@@ -10,7 +10,7 @@ export const getFeatureImages = createAsyncThunk(
   "/order/getFeatureImages",
   async () => {
     const response = await axios.get(
-      `https://ecommerce-d1.onrender.com/api/common/feature/get`
+      `https://suparcart.onrender.com/api/common/feature/get`
     );
 
     return response.data;
@@ -23,7 +23,7 @@ export const addFeatureImage = createAsyncThunk(
   "/order/addFeatureImage",
   async (image) => {
     const response = await axios.post(
-      `https://ecommerce-d1.onrender.com/api/common/feature/add`,
+      `https://suparcart.onrender.com/api/common/feature/add`,
       { image }
     );
 
@@ -35,7 +35,7 @@ export const deleteFeatureImage = createAsyncThunk(
   "/order/deleteFeatureImage",
   async (id) => {
     const response = await axios.delete(
-      `https://ecommerce-d1.onrender.com/api/common/feature/${id}`
+      `https://suparcart.onrender.com/api/common/feature/${id}`
     );
 
     return response.data;

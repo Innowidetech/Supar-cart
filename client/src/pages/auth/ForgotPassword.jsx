@@ -13,7 +13,7 @@ const ForgotPassword = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('https://ecommerce-d1.onrender.com/api/auth/request-password-reset', { email });
+      const response = await axios.post('https://suparcart.onrender.com/api/auth/request-password-reset', { email });
       setMessage(response.data.message);
       setError('');
       navigate('/auth/reset-password', { state: { email } });

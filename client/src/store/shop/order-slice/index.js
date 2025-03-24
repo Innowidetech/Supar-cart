@@ -16,7 +16,7 @@ const getToken = () => {
 
 // Create an Axios instance with an interceptor to add the token
 const axiosInstance = axios.create({
-  baseURL: 'https://ecommerce-d1.onrender.com/api/shop/order', // Base URL for your order API
+  baseURL: 'https://suparcart.onrender.com/api/shop/order', // Base URL for your order API
 });
 
 axiosInstance.interceptors.request.use((config) => {

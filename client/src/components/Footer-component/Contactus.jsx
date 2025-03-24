@@ -14,7 +14,7 @@ const Contact = () => {
 
     try {
       // Make the POST request to the backend API
-      const response = await axios.post('https://ecommerce-d1.onrender.com/api/common/contact-us', formData);
+      const response = await axios.post('https://suparcart.onrender.com/api/common/contact-us', formData);
       
       // Handle success
       if (response.status === 200) {

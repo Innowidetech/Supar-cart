@@ -69,7 +69,7 @@ function AdminDashboard() {
   // Fetching API
   const fetchedUserData = async () => {
     try {
-      let response = await axios.get("https://ecommerce-d1.onrender.com/api/auth/users");
+      let response = await axios.get("https://suparcart.onrender.com/api/auth/users");
       setAdmindata(response.data.users);
     } catch (error) {
       console.log(error);
