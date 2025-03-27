@@ -33,4 +33,4 @@ An Suparcart platform built for online shopping, featuring clothing, footwear, a
 - npm or yarn (for package management)
 - MongoDB Atlas or local MongoDB setup
 
-## Visit the website by clicking on the link --> https://ecommerce-web03.web.app/
+## Visit the website by clicking on the link --> https://suparcart.web.app/
