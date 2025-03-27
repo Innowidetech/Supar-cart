@@ -1,6 +1,6 @@
 # Suparcart Website
 
-An Suparcart platform built for online shopping, featuring clothing, footwear, accessories, and more. The project utilizes a modern tech stack.
+Suparcart platform is built for online shopping, featuring clothing, footwear, accessories, and more. The project utilizes a modern tech stack.
 
 ## Technologies Used
 
